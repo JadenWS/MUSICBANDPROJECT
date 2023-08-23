@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>My Chemical Romace</title>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Metal+Mania|Roboto+Condensed" rel="stylesheet">
+  </head>
+  <body>
+
+      <h1>My Chemical Romance</h1>
+
+      <img class='drumset-part' id='kick' src='images/kick.png' onclick='play("kick-audio")'>
+      <img class='drumset-part' id='crash' src='images/crash.png' onclick='play("crash-audio")'>
+      <img class='drumset-part' id='tom' src='images/tom.png' onclick='play("tom-audio")'>
+      <img class='drumset-part' id='hihat' src='images/hihat.png' onclick='play("hihat-audio")'>
+      <img class='drumset-part' id='snare' src='images/snare.png' onclick='play("snare-audio")'>
+      <img class='drumset-part' id='tomleft' src='images/tomleft.png' onclick='play("tomleft-audio")'>
+      <img class='drumset-part' id='tomright' src='images/tomright.png' onclick='play("tomright-audio")'>
+    
+    <audio src='sounds/kick.mp3' id='kick-audio'></audio>
+    <audio src='sounds/crash.mp3' id='crash-audio' preload></audio>
+    <audio src='sounds/hihat.mp3' id='hihat-audio'></audio>
+    <audio src='sounds/snare.mp3' id='snare-audio'></audio>
+    <audio src='sounds/tom.mp3' id='tom-audio'></audio>
+    <audio src='sounds/tomleft.mp3' id='tomleft-audio'></audio>
+    <audio src='sounds/tomright.mp3' id='tomright-audio'></audio>
+    <audio src='sounds/music.mp3' id='bg-music' controls></audio>
+    
+    <script>
+      
+     function play(audioId){
+       var audio = document.getElementById(audioId);
+       audio.currentTime = 0;
+       audio.play();
+       
+      
+     } 
+      
+    </script>
+    
+    
+    
+    
+
+  </body>
+</html>
